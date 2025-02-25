@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid var(--red-01);
+  background-color: white;
+}
+
+.disabled {
+  display: none;
+}
+
+.ratingArea {
+  display: flex;
+  gap: 40px;
+}
+
+.ratingOption {
+  display: flex;
+  gap: 10px;
+}
+
+.descriptionInput {
+  display: flex;
+  align-items: flex-start;
+  overflow-y: auto;
+  height: 120px;
+  line-height: 1.5rem;
+  padding: 8px 12px;
+  border-radius: 8px 8px 0 8px;
+  background: white;
+  border: 2px solid #d3d3d3;
+  transition: 0.5s;
+}
+
+.descriptionInput:hover {
+  transition: 0.5s;
+  border: 2px solid #8d8d8d;
+}

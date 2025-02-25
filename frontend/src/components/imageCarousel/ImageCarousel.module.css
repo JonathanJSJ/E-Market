@@ -1,0 +1,65 @@
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 90vw;
+  max-width: 1700px;
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.carouselContent {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  justify-content: center;
+  width: 100%;
+}
+
+.banner {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.bannerImage {
+  height: 100%;
+  max-width: 100%;
+}
+
+.carouselButton {
+  background-color: var(--white-01);
+  opacity: 50%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  transition: background-color 0.3s;
+  z-index: 1;
+}
+
+.carouselButton:hover {
+  background-color: var(--gray-03);
+}
+
+.prevButton {
+  position: absolute;
+  left: 10px;
+}
+
+.nextButton {
+  position: absolute;
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    width: 100vw;
+    height: 20vh;
+    border-radius: 0px;
+  }
+}

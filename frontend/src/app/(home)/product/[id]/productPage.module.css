@@ -1,0 +1,167 @@
+.containerFrame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 40px;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 60px;
+  height: 100%;
+  width: 75%;
+}
+
+.productContainer {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  justify-content: space-between;
+}
+
+.productImage {
+  object-fit: contain;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.productContextArea {
+  width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productInfoArea {
+  height: 85%;
+  padding: 20px;
+  border: 1px solid #d3d3d3;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.description {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  overflow-y: auto;
+}
+
+.sellerArea {
+  display: flex;
+  align-items: flex-end;
+  width: 70%;
+  gap: 20px;
+}
+
+.chatArea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 162px;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  border-radius: 15px;
+}
+
+.chatOption {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.feedbackContainer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 20px;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 20px;
+  max-height: 1000px;
+  padding-right: 10px;
+}
+
+.feedback::-webkit-scrollbar {
+  height: 6px;
+  width: 10px;
+}
+
+.feedback::-webkit-scrollbar-track {
+  background-color: #c4c4c4;
+  border-radius: 6px;
+}
+
+.feedback::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .containerFrame {
+    width: 100vw;
+    margin-top: 80px;
+  }
+
+  .content {
+    width: 90%;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .productContainer {
+    height: 100%;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .productImage {
+    width: 100%;
+    padding: 10px;
+    height: 230px;
+  }
+
+  .productContextArea {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .productInfoArea {
+    height: 400px;
+  }
+
+  .description {
+    height: 60%;
+  }
+
+  .sellerArea {
+    flex-direction: column;
+    width: 90vw;
+    height: 100%;
+    gap: 10px;
+  }
+
+  .chatArea{
+    width: 100%;
+    height: 180px;
+    padding: 15px;
+  }
+
+  .feedbackContainer{
+    width: 100%;
+  }
+}

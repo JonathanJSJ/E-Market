@@ -1,0 +1,126 @@
+.appBar {
+  display: flex;
+  flex-direction: row;
+  background-color: #d90439;
+  height: 80px;
+  min-height: 60px;
+  max-height: 80px;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 5vw;
+  cursor: pointer;
+}
+
+.logo {
+  border-radius: 25px;
+}
+
+.searchField {
+  margin-left: 70px;
+  padding-left: 15px;
+  padding-right: 10px;
+  height: 40px;
+  width: 30vw;
+  border-radius: 25px;
+  font-size: medium;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+.menuButton {
+  display: none;
+}
+
+.navItems {
+  display: flex;
+  gap: 20px;
+  margin-right: 5vw;
+}
+
+.navItems > button {
+  gap: 6px;
+  color: #fcfcfc;
+  font-weight: bold;
+  text-decoration: none;
+  background: none;
+  font-size: 18px;
+}
+
+.navItems > button:hover {
+  color: #a7a7a7;
+  background: none;
+  transition: 500ms;
+}
+
+.navItemSelected {
+  color: black;
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  color: white;
+  margin-right: 10px;
+}
+
+.avatar {
+  background-color: #ffffff;
+}
+
+.drawer {
+  width: 200px;
+}
+
+.drawerList {
+  width: 200px;
+}
+
+.menuButton {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .logoContainer {
+    margin-left: 5vw;
+  }
+
+  .searchField {
+    margin-left: 10px;
+    width: 45vw;
+  }
+
+  .menuButton {
+    margin-right: 3vw;
+    display: block;
+  }
+  .navItems {
+    display: none;
+  }
+
+  .userSection {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .appBar {
+    height: 60px;
+  }
+
+  .logo {
+    width: 120px;
+    height: 40px;
+  }
+
+  .menuButton {
+    margin-right: 3vw;
+  }
+}

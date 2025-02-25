@@ -1,0 +1,107 @@
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--red-01);
+}
+
+.userContainer {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  height: 90%;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 240px;
+  padding: 40px;
+}
+
+.sidebarOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 65%;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.mobileMenuButton {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  width: 100%;
+}
+
+.dataInputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .userContainer {
+    width: 95%;
+    height: 98%;
+  }
+
+  .sidebar {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    max-width: 300px;
+    padding: 70px;
+    height: 100vh;
+    z-index: 10;
+  }
+
+  .active {
+    transition: 1s;
+    transition: transform 0.5s ease;
+    transform: translateX(0);
+  }
+
+  .disabled {
+    z-index: 10;
+    position: absolute;
+    transition: transform 0.5s ease;
+    transform: translateX(-100%);
+  }
+
+  .mobileMenuButton {
+    display: flex;
+    gap: 10px;
+    color: var(--red-01);
+    margin-bottom: 10px;
+  }
+
+  .main {
+    padding: 30px;
+  }
+}
