@@ -1,4 +1,4 @@
-# Qatu Front-end
+# E-Market
 This repository contains an unfinished version of a marketplace, developed with **Spring Boot**, **Next.js** and **MUI**.  
 
 ⚠️ **Important Notice** ⚠️  

@@ -1,6 +1,6 @@
-# Qatu
+# E-Market Backend
 
-This repository contains an unfinished version of the back-end of a marketplace called **QATU**, developed with **Spring Boot**.  
+This repository contains an unfinished version of the back-end of a marketplace, developed with **Spring Boot**.  
 
 ⚠️ **Important Notice** ⚠️  
 This repository is public for reference purposes only. **Copying, modifying, or reusing any part of this code is not allowed.**  
@@ -17,9 +17,9 @@ Before starting the project, ensure you have the following technologies:
 - JDK 21
 - PostgreSQL or Docker
 
-## 🚀 Installing Qatu
+## 🚀 Installing
 
-To install Qatu, follow these steps:
+To install, follow these steps:
 
 First, type in your terminal or cmd:
 
@@ -81,7 +81,7 @@ SERVER_PORT=8080
 To build the Docker image, run the following command in the project root directory:
 
 ```bash
-docker build -t qatu-backend .
+docker build -t backend .
 ```
 
 ### Running the Docker Container
@@ -90,22 +90,22 @@ To run the Docker container, use the following command. Make sure to replace the
 values:
 
 ```bash
-docker run -d -p 8080:8080 --env-file .env qatu-backend
+docker run -d -p 8080:8080 --env-file .env backend
 ```
 
 #### Examples without environment  file
 
 1. With a different database host:
     ```bash
-    docker run -d -p 8080:8080 -e DB_PORT=5432 -e DB_HOST=192.168.0.50 qatu-backend
+    docker run -d -p 8080:8080 -e DB_PORT=5432 -e DB_HOST=192.168.0.50 backend
     ```
 2. Change the server port:
     ```bash
-    docker run -d -p 8080:8070 -e SERVER_PORT=8070 qatu-backend
+    docker run -d -p 8080:8070 -e SERVER_PORT=8070 backend
     ```
 3. Set the database username and password:
     ```bash
-    docker run -d -p 8080:8080 -e DB_USERNAME=student -e DB_PASSWORD='Twinkle, Twinkle, Little Star' qatu-backend
+    docker run -d -p 8080:8080 -e DB_USERNAME=student -e DB_PASSWORD='Twinkle, Twinkle, Little Star' backend
     ```
 
 

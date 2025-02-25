@@ -11,9 +11,9 @@ export default function SellerContract({onConfirm, onCancel}) {
           align="justify"
           className={styles.text}
         >
-            Welcome to Qatu! By using our seller application, you agree to these
+            Welcome to E-Market! By using our seller application, you agree to these
             Terms of Use. This agreement governs your access to and use of the
-            application provided by Qatu Co.. To participate as a seller, you
+            application provided by E-Market Co.. To participate as a seller, you
             must provide accurate registration details, comply with applicable
             laws, and adhere to marketplace policies. Failure to meet these
             requirements may result in account suspension or termination.

@@ -1,5 +1,5 @@
-# Qatu Front-end
-This repository contains an unfinished version of a marketplace called **QATU**, developed with **Next.js** and **MUI**.  
+# E-Market Front-end
+This repository contains an unfinished version of a marketplace, developed with **Next.js** and **MUI**.  
 
 ⚠️ **Important Notice** ⚠️  
 This repository is public for reference purposes only. **Copying, modifying, or reusing any part of this code is not allowed.**  
@@ -11,12 +11,12 @@ Se precisar de mais informações, entre em contato comigo.
 
 ## 🚀 Installation
 
-To install the Qatu front-end, follow these steps:
+To install the front-end, follow these steps:
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/JonathanJSJ/QATU-Marketplace
+   git clone https://github.com/JonathanJSJ/E-Market
    ```
 
 2. Navigate to the project directory:
@@ -66,13 +66,13 @@ If you prefer to run the project with Docker, follow these steps:
 1. Build the Docker image:
 
    ```bash
-   docker build -t qatu-frontend .
+   docker build -t frontend .
    ```
 
 2. Run the Docker container using the `.env` variables:
 
    ```bash
-   docker run -d -p 3000:3000 --env-file .env qatu-frontend
+   docker run -d -p 3000:3000 --env-file .env frontend
    ```
 
 
